@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from '../common/Header';
-import RepoSearch from './RepoSearch';
-import RepoDetail from './RepoDetail';
+import Header from './common/Header';
+import RepoSearch from './features/RepoSearch';
+import RepoDetail from './features/RepoDetail';
 
 const App = () => {
   return (
