@@ -7,11 +7,12 @@ const Header = () => {
     <Navbar as="header" bg="dark" variant="dark" className="mb-4">
       <Navbar.Brand
         href="https://github.com/romankhymych/github-repo-search"
+        rel="noopener noreferrer"
         target="_blank"
         className="d-flex align-items-center"
       >
         <GoMarkGithub className="mr-2" />
-        {process.env.REACT_APP_WEBSITE_NAME}
+        {process.env.REACT_APP_NAME}
       </Navbar.Brand>
     </Navbar>
   );
