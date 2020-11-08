@@ -2,6 +2,8 @@
 
 This project allows you to search for GitHub repositories and viewing the details of them.
 
+![screencast GIF](assets/screencast.gif)
+
 ## Install
 
 ```sh
@@ -14,7 +16,7 @@ npm install
 npm start
 ```
 
-## Run tests
+## Testing
 
 ```sh
 npm test
