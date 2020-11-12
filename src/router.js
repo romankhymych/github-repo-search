@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Repos from './repos';
-import Repo from './repo';
+import Repos from './features/repos';
+import Repo from './features/repo';
 
 const Router = () => {
   return (

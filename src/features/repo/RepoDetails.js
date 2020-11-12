@@ -16,8 +16,8 @@ import {
 import numeral from 'numeral';
 import moment from 'moment';
 
-import Hyperlink from '../common/Hyperlink';
-import CardItem from '../common/CardItem';
+import Hyperlink from '../../common/Hyperlink';
+import CardItem from '../../common/CardItem';
 
 const RepoDetails = ({ repo }) => {
   const {

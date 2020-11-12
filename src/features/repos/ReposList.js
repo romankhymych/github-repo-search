@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, ListGroup } from 'react-bootstrap';
 
-import ErrorAlert from '../common/ErrorAlert';
+import ErrorAlert from '../../common/ErrorAlert';
 import ReposListRow from './ReposListRow';
 
 const ReposList = ({ repos, error }) => {

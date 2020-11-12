@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Button, Col, Row, Spinner } from 'react-bootstrap';
 
-import github from '../api/github';
-import ErrorAlert from '../common/ErrorAlert';
+import github from '../../api/github';
+import ErrorAlert from '../../common/ErrorAlert';
 import RepoDetails from './RepoDetails';
 
 const Repo = ({ match }) => {
