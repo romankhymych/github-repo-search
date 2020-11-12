@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, ListGroup } from 'react-bootstrap';
 
-import ErrorAlert from '../../common/ErrorAlert';
-import RepoListItem from './RepoListItem';
+import ErrorAlert from '../common/ErrorAlert';
+import ReposListRow from './ReposListRow';
 
-const RepoList = ({ repos, error }) => {
+const ReposList = ({ repos, error }) => {
   const renderedList = repos.map(repo => (
-    <RepoListItem key={repo.id} repo={repo} />
+    <ReposListRow key={repo.id} repo={repo} />
   ));
 
   return (
@@ -20,13 +20,13 @@ const RepoList = ({ repos, error }) => {
   );
 };
 
-RepoList.defaultProps = {
+ReposList.defaultProps = {
   error: '',
 };
 
-RepoList.propTypes = {
+ReposList.propTypes = {
   repos: PropTypes.array.isRequired,
   error: PropTypes.string,
 };
 
-export default RepoList;
+export default ReposList;

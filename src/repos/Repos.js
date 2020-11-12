@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import github from '../../api/github';
-import SearchBar from '../../common/SearchBar';
-import RepoList from './RepoList';
+import github from '../api/github';
+import SearchBar from '../common/SearchBar';
+import ReposList from './ReposList';
 
-const RepoSearch = () => {
+const Repos = () => {
   const ITEMS_PER_PAGE = 10;
   const [searchTerm, setSearchTerm] = useState('');
   const [repos, setRepos] = useState([]);
@@ -44,9 +44,9 @@ const RepoSearch = () => {
         onSubmitHandler={onSubmitHandler}
         loading={loading}
       />
-      <RepoList repos={repos} error={error} />
+      <ReposList repos={repos} error={error} />
     </section>
   );
 };
 
-export default RepoSearch;
+export default Repos;

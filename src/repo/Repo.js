@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Button, Col, Row, Spinner } from 'react-bootstrap';
 
-import github from '../../api/github';
-import ErrorAlert from '../../common/ErrorAlert';
-import Repo from './Repo';
+import github from '../api/github';
+import ErrorAlert from '../common/ErrorAlert';
+import RepoDetails from './RepoDetails';
 
-const RepoDetail = ({ match }) => {
+const Repo = ({ match }) => {
   const { params } = match;
   const [repo, setRepo] = useState(null);
   const [error, setError] = useState('');
@@ -68,13 +68,13 @@ const RepoDetail = ({ match }) => {
         </Col>
       </Row>
       <Row>
-        <Col>{repo && <Repo repo={repo} />}</Col>
+        <Col>{repo && <RepoDetails repo={repo} />}</Col>
       </Row>
     </section>
   );
 };
 
-RepoDetail.propTypes = {
+Repo.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
       owner: PropTypes.string.isRequired,
@@ -83,4 +83,4 @@ RepoDetail.propTypes = {
   }),
 };
 
-export default RepoDetail;
+export default Repo;

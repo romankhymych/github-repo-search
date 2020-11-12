@@ -16,10 +16,10 @@ import {
 import numeral from 'numeral';
 import moment from 'moment';
 
-import Hyperlink from '../../common/Hyperlink';
-import CardItem from '../../common/CardItem';
+import Hyperlink from '../common/Hyperlink';
+import CardItem from '../common/CardItem';
 
-const Repo = ({ repo }) => {
+const RepoDetails = ({ repo }) => {
   const {
     created_at,
     description,
@@ -160,7 +160,7 @@ const Repo = ({ repo }) => {
   );
 };
 
-Repo.propTypes = {
+RepoDetails.propTypes = {
   repo: PropTypes.shape({
     created_at: PropTypes.string,
     description: PropTypes.string,
@@ -183,4 +183,4 @@ Repo.propTypes = {
   }),
 };
 
-export default Repo;
+export default RepoDetails;

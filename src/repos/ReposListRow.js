@@ -5,7 +5,7 @@ import { ListGroup } from 'react-bootstrap';
 import { GoRepo, GoStar, GoCode } from 'react-icons/go';
 import numeral from 'numeral';
 
-const RepoListItem = ({ repo }) => {
+const ReposListRow = ({ repo }) => {
   const { full_name, stargazers_count, language } = repo;
 
   return (
@@ -28,14 +28,14 @@ const RepoListItem = ({ repo }) => {
   );
 };
 
-RepoListItem.defaultProps = {
+ReposListRow.defaultProps = {
   repo: {
     stargazers_count: 0,
     language: '',
   },
 };
 
-RepoListItem.propTypes = {
+ReposListRow.propTypes = {
   repo: PropTypes.shape({
     full_name: PropTypes.string.isRequired,
     stargazers_count: PropTypes.number,
@@ -43,4 +43,4 @@ RepoListItem.propTypes = {
   }),
 };
 
-export default RepoListItem;
+export default ReposListRow;

@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 const Hyperlink = ({ href, children }) => {
   return (
-    <React.Fragment>
-      <a href={href} rel="noopener noreferrer" target="_blank">
-        {children}
-      </a>
-    </React.Fragment>
+    <a href={href} rel="noopener noreferrer" target="_blank">
+      {children}
+    </a>
   );
 };
 
